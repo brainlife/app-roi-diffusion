@@ -15,10 +15,10 @@ if [ ! -f ${icvf} ]; then
 	metric="ad fa md rd"
 	echo ${metric}
 elif [ -f ${icvf} ] && [ -f ${fa} ]; then
-	metric="icvf od isovf ad fa md rd"
+	metric="ad fa icvf isovf md od rd"
 	echo ${metric}
 else
-	metric="icvf od isovf"
+	metric="icvf isovf od"
 	echo ${metric}
 fi
 
